@@ -1,0 +1,59 @@
+$color: #fc8950;
+$font-family: "Open Sans", sans-serif;
+
+.container.firstInterview-container {
+  background-color: $color;
+
+  &:before {
+    color: $color;
+    border: 5px solid $color;
+  }
+}
+
+.firstInterview-btn-container {
+  .btn {
+    background-color: $color;
+  }
+
+  .disabled {
+    display: flex;
+  }
+}
+
+.headline.firstInterview-headline {
+  font-family: $font-family;
+  color: $color;
+}
+
+.firstInterview-container .info-block {
+  text-transform: capitalize;
+}
+
+.firstInterview-radiobutton-container .custom-radio input:checked + .radio-btn {
+  background-color: $color;
+}
+
+.firstInterview-radiobutton-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 50%;
+}
+
+.firstInterview-form-container {
+  padding-top: 5%;
+
+  .btn {
+    background-color: $color;
+    padding: 2% 5%;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1299px) {
+  .container {
+    &:before {
+      border: 3px solid $color;
+    }
+  }
+}

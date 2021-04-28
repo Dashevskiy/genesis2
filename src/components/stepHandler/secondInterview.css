@@ -1,0 +1,56 @@
+.container.secondInterview-container {
+  background-color: #fcc150;
+}
+.container.secondInterview-container:before {
+  color: #fcc150;
+  border: 5px solid #fcc150;
+}
+
+.secondInterview-btn-container .btn {
+  background-color: #fcc150;
+}
+.secondInterview-btn-container .disabled {
+  display: flex;
+}
+
+.headline.secondInterview-headline {
+  font-family: "Open Sans", sans-serif;
+  color: #fcc150;
+}
+
+.secondInterview-container .info-block {
+  text-transform: capitalize;
+}
+
+.radio-btn img {
+  width: 10%;
+  margin: 0 5%;
+}
+
+.secondInterview-radiobutton-container .custom-radio input:checked + .radio-btn {
+  background-color: #fcc150;
+}
+
+.secondInterview-radiobutton-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 50%;
+}
+
+.secondInterview-form-container {
+  padding-top: 5%;
+}
+.secondInterview-form-container .btn {
+  background-color: #fcc150;
+  padding: 2% 5%;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1299px) {
+  .container:before {
+    border: 3px solid #fcc150;
+  }
+}
+
+/*# sourceMappingURL=secondInterview.css.map */

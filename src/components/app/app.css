@@ -1,0 +1,14 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
