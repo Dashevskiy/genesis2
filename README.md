@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+Genesis Test task
+https://drive.google.com/drive/folders/1N7t-MbaYwNOxJqX7hPYjCvMrFBQfkPsn
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+тестовое
 
-## Available Scripts
+нужно сделать первые две странички лединга (страничка с кнопкой "начать" и страничка с радиокнопками "вариант А, Б, В)) test-desk (первый файл)
 
-In the project directory, you can run:
+- использовать для этого шаблон react приложения сделанный через create-react-app https://github.com/facebook/create-react-app. добавлять ничего не нужно, базового функционала шаблона достаточно
 
-### `npm start`
+- структура папок/компонентов, именование классов в css на ваше усмотрение (этому уделить особенное внимание)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- code-style на ваше усмотрение, пишите так как хотели бы писать в вашем собственном проекте. обязательный только отступ в 2 пробела https://learn.javascript.ru/coding-style#otstupy
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- переключение на второй шаг должно срабатывать после нажатия на кнопку "начать"
 
-### `npm test`
+- радиобаттоны на втором шаге кликабельные
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- лендинг должен корректно тянуться (быть адаптивным) на ширине экрана от 1366 до 1920 пикселей
 
-### `npm run build`
+- использовать нужно только функциональные компоненты и хуки (без классовых компонентов, this.setState и т.д.)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- не допускается использование сторонних библиотек (для компонентов или анимаций)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- результат запушить к себе в гитхаб-аккаунт и скинуть рекрутеру ссылку. проект должен дефолтно запускаться через npm i + npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+остальные нюансы — на ваше усмотрение (например анимация между переходом на второй шаг). инициатива приветствуется
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+______________________________________________________________________________________________________________________________________
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. все требования к первому тестовому остаются в силе
+2. предыдущие страницы нужно переделать согласно фидбеку на первое тестовое что ты скинул
+3. нужно дополнительно сделать 3 и 4 страницу
+4. на 4 странице есть форма, нужно реализовать форму (поле имени, имейла, пароля и свитч между вариант 1 и в 2) и валидацию полей 
+валидация должна выдавать ошибку если поле осталось пустым (то есть все поля на странице required) или если  введенное значение неверное
+(можно взять регулярки из интернета для имейла, пароля и имени). лучше заюзать библиотеку для работы с формами вроде Formik или react-hook-form.
+5. при клике на последней странице на кнопку "продолжить" в консоль должен выводиться объект со значениями из полей формы (то есть то что пользователь ввел в эти поля)
+{
+    name: 'some name from name input',
+    email: 'some email from email input',
+    password: 'some password from password input',
+}
+6. на последней странице есть также чекбокс внизу где пользователь соглашается с тем что ему есть 18, если отключить этот чекбокс — кнопка должна быть задизейблена (вывод в консоль не должен отрабатывать, и можешь ей какие-то стили задать для disabled состояния). так же кнопка должна быть задизейблена если валидация хотя-бы одного из полей выдаст ошибку (пользователь ввел неправильное значение или оставил поле пустым)
